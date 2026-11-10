@@ -1,0 +1,114 @@
+# ========================================
+# SECURITY - NEVER COMMIT THESE FILES
+# ========================================
+# Environment variables with API keys, secrets, passwords
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
+
+# API keys and secrets
+**/secrets/
+**/credentials/
+*.key
+*.pem
+*.p12
+*.pfx
+*secret*
+*SECRET*
+*apikey*
+*APIKEY*
+
+# ========================================
+# DEPENDENCIES
+# ========================================
+# Frontend (Node.js)
+1115-frontend/node_modules/
+1115-frontend/.pnp
+1115-frontend/.pnp.*
+
+# Backend (Python/Node.js - adjust as needed)
+1115-backend/node_modules/
+1115-backend/venv/
+1115-backend/env/
+1115-backend/__pycache__/
+1115-backend/*.pyc
+1115-backend/*.pyo
+1115-backend/*.pyd
+
+# ========================================
+# BUILD OUTPUTS
+# ========================================
+# Frontend Next.js
+1115-frontend/.next/
+1115-frontend/out/
+1115-frontend/build/
+1115-frontend/dist/
+
+# Backend builds
+1115-backend/dist/
+1115-backend/build/
+
+# ========================================
+# DATABASES & DATA
+# ========================================
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+/data/
+uploads/
+
+# ========================================
+# LOGS
+# ========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========================================
+# TYPESCRIPT
+# ========================================
+*.tsbuildinfo
+next-env.d.ts
+
+# ========================================
+# OS FILES
+# ========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# ========================================
+# IDEs & EDITORS
+# ========================================
+.vscode/
+.idea/
+*.iml
+.fleet/
+*.code-workspace
+
+# ========================================
+# TESTING
+# ========================================
+coverage/
+.nyc_output/
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ========================================
+# DEPLOYMENT
+# ========================================
+.vercel
+.netlify
